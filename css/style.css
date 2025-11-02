@@ -1,0 +1,118 @@
+:root {
+    --dark: #2b2d42;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+body {
+    background-color: #edf2f4;
+    font-family: "lato", sans-serif;
+
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.blogs-section {
+    padding: 50px 0;
+
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: var(--dark);
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border: 1px solid#ddd;
+
+
+}
+
+.card {
+    background-color: antiquewhite;
+    color: var(--dark);
+    flex: 1 1 30%;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: .3s;
+    position: relative;
+}
+
+.card span {
+    color: #fff;
+    position: absolute;
+    background-color: crimson;
+    border-radius: 5px;
+    padding: 4px 8px;
+    right: 30px;
+    top: 30px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card small {
+    display: inline-block;
+    color: white;
+    background-color: var(--dark);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 10px 0;
+
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.more p {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.more i{
+    font-size: 25px;
+}
+@media screen and (max-width:900px){
+    .card{
+        flex: 1 1 45%;
+    }
+}
+@media screen and (max-width:600px){
+    .card{
+        flex: 1 1 100%;
+    }
+    .blogs-section h1{
+        font-size: 35px;
+    }
+}
